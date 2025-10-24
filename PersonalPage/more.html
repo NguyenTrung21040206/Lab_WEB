@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>More</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="more">
+  <div class="loading">
+      <img src="https://i.gifer.com/3MfN.gif" alt="">
+    <div class="process-bar">
+      <div class="process"></div>
+    </div>
+  </div>
+<script>
+   var process = document.querySelector('.process')
+   var per = 16;
+   var loading = setInterval(animate, 50)
+   function animate(){
+       if(per == 1180){
+           clearInterval(loading)
+       }else{
+           per += 4
+           process.style.width = per + "px";
+       }
+   }
+</script>
+</body>
+</html>

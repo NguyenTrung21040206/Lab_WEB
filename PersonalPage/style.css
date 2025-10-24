@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html, body{
+    text-align: center;
+}
+.header a{
+    font-family: "Anton", sans-serif;
+    text-decoration: none;
+    margin: 18px 20px;
+    transition: 0.2s;
+    border: transparent;
+    box-shadow: 2px 2px 2px transparent;
+    background-image: linear-gradient(#DBE6F6, #C5796D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header a:hover{
+    padding: 3px;
+    border: 1px solid #C5796D;
+    border-radius: 5px;
+    cursor: pointer;;
+}
+.btn{
+    color: #eeeee4;
+    font-size: 20px;
+}
+.header{
+    text-align: right;
+    display: block;
+    width: 90%;
+    padding-top: 25px;
+}
+div{
+    width: 50%;
+    top: 50%;
+}
+body.header{
+    width: 100%;
+    height: 100%;
+    /*background: #154c79;*/
+    /*https://i.gifer.com/2yqT.gif*/
+    background-image: url("https://i.gifer.com/7ZAf.gif");
+    background-size: cover;
+    animation-duration: 5s;
+}
+body.home{
+    background-image: url("https://i.gifer.com/WBVi.gif");
+    background-size: auto;
+}
+#typing{
+    font-family: "Caveat Brush";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    line-height: 100px;
+    font-size: 80px;
+    background-image: linear-gradient(45deg, #d9a7c7, #fffcdc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 0.5s ease;
+}
+@keyframes animate {
+    0%{
+        background-size: 500%;
+    }
+    50%{
+        background-size: 700%;
+    }
+    100%{
+        background-size: 900%;
+    }
+}
+#heart{
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    size: 50px;
+}
+.about{
+    background: linear-gradient(
+    to right,
+    #ff179f 0%,
+    #ff179f 50%,
+    #33aaff 50%,
+    #33aaff 100%
+    );
+}
+.timeline{
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #d9a7c7;
+    border-radius: 10px;
+}
+.timeline::after{
+    content: '';
+    position: fixed;
+    width: 5px;
+    background-color: whitesmoke;
+    bottom: 0px;
+    height: 100%;
+}
+.container{
+    top: 0;
+    padding: 20px 20px;
+    position: relative;
+    width: 90%;
+}
+.left{
+    left: 4%;
+}
+.right{
+    left: 50%;
+}
+.content{
+    padding: 20px 20px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+.left .content{
+    background-color: #ff73c5;
+}
+.right .content{
+    background-color: #84ccff;
+}
+body.more{
+    background-image: url("https://cdn.pixabay.com/photo/2022/09/25/09/58/houses-7477950_1280.jpg");
+    background-size: cover;
+}
+.loading{
+    position: center;
+    text-align: center;
+    display: block;
+}
+.process-bar{
+    width: 1200px;
+    height: 21px;
+    background: #111;
+    border-radius: 13px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+.process{
+    width: 1000px;
+    height: 15px;
+    background: linear-gradient(#c31432,#240b36);
+    border-radius: 13px;
+}
+body.contact{
+    background-image: url("https://cdn.pixabay.com/photo/2020/08/29/14/39/flamingo-5527232_1280.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 100%;
+    position: center;;
+}
+.fa:hover{
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    background: #111111;
+    color: white;
+}
+form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 330px;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+    border: 1px solid #b3b3b3;
+    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.or{
+    font-family: 'Roboto', sans-serif;
+    background: steelblue;
+}
+
+input::placeholder, textarea::placeholder{
+    font-family: 'Roboto', sans-serif;
+}
+input, textarea{
+    background: transparent;
+    border-radius: 8px;
+    width: 80%;
+}
+textarea{
+    resize: none;
+}
+input[type="submit"]{
+    background: lightskyblue;
+}
+input[type="submit"]:hover{
+    background: #240b36;
+    color: #DBE6F6;
+}
+.blog{
+    background: url("https://cdn.pixabay.com/photo/2022/11/13/18/50/autumn-7589934_1280.jpg");
+}
+.blog div{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    position: relative;
+}
+.slider{
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    transition: 0.2s;
+    opacity: 0.8;
+}
+.slider .card{
+    flex: 1;
+    margin: 0 10px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.slider .card:hover{
+    transform: scale(0.9);
+}
+.slider .card .img{
+    width: 100%;
+    height: 200px;
+}
+.slider .card .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .card .content{
+    padding: 10px 20px;
+    display: block;
+    background-color: #C5796D;
+}
+.card .content .title{
+    font-size: 25px;
+    font-weight: 600;
+    color: beige;
+}
+.card .content p{
+    text-align: left;
+    width: 100%;
+    margin: 10px 0;
+}
+center{
+    bottom: 0;
+    line-height: 100px;
+    color: #f2f2f2;
+}
