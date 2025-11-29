@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home">
+    <image id="heart" src="https://i.gifer.com/nUg.gif"></image>
+    <div>
+        <p id="typing"></p>
+    </div>
+</body>
+<script>
+    var i = 0;
+    var txt = 'Hello! I\'m Nguyen Ngoc Dinh Trung! ';
+    var speed = 150;
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("typing").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+    window.onload = typeWriter;
+</script>
+
+</html>
