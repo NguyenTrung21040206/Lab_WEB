@@ -1,0 +1,6 @@
+com\example\product_management\controller\ProductController.class
+com\example\product_management\ProductManagementApplication.class
+com\example\product_management\repository\ProductRepository.class
+com\example\product_management\service\ProductService.class
+com\example\product_management\entity\Product.class
+com\example\product_management\service\ProductServiceImpl.class
